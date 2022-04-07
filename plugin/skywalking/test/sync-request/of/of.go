@@ -4,15 +4,16 @@ import (
 	"context"
 	"fmt"
 	"io/ioutil"
+	"k8s.io/klog/v2"
 	"net/http"
 	"os"
 	"sync"
 
 	"github.com/SkyAPM/go2sky"
 	go2skyHTTP "github.com/SkyAPM/go2sky/plugins/http"
-	"lixf311/fc-framework-go/framework"
-	"lixf311/fc-framework-go/plugin"
-	"lixf311/fc-framework-go/plugin/skywalking"
+	"github.com/lixf311/fc-framework-go/framework"
+	"github.com/lixf311/fc-framework-go/plugin"
+	"github.com/lixf311/fc-framework-go/plugin/skywalking"
 )
 
 var (

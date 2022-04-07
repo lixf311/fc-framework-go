@@ -5,6 +5,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/dapr/dapr/pkg/proto/runtime/v1"
+
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -16,8 +18,8 @@ import (
 	"github.com/dapr/go-sdk/service/common"
 	"github.com/stretchr/testify/assert"
 
-	ofctx "lixf311/fc-framework-go/context"
-	"lixf311/fc-framework-go/runtime/async"
+	ofctx "github.com/lixf311/fc-framework-go/context"
+	"github.com/lixf311/fc-framework-go/runtime/async"
 )
 
 func fakeHTTPFunction(w http.ResponseWriter, r *http.Request) {

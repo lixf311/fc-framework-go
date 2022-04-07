@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/SkyAPM/go2sky"
-	ofctx "lixf311/fc-framework-go/context"
+	ofctx "github.com/lixf311/fc-framework-go/context"
 )
 
 func preAsyncRequestCommonLogic(ofCtx ofctx.RuntimeContext, tracer *go2sky.Tracer) (go2sky.Span, error) {

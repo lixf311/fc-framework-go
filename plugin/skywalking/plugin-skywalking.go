@@ -2,12 +2,13 @@ package skywalking
 
 import (
 	"context"
+	"k8s.io/klog/v2"
 	"sync"
 
 	"github.com/SkyAPM/go2sky"
 	"github.com/SkyAPM/go2sky/reporter"
-	ofctx "lixf311/fc-framework-go/context"
-	"lixf311/fc-framework-go/plugin"
+	ofctx "github.com/lixf311/fc-framework-go/context"
+	"github.com/lixf311/fc-framework-go/plugin"
 
 	agentv3 "skywalking.apache.org/repo/goapi/collect/language/agent/v3"
 )
@@ -16,7 +17,7 @@ const (
 	Name    = "skywalking"
 	Version = "v1"
 
-	componentIDOpenFunction = 5013 // https://github.com/apache/skywalking/blob/master/oap-server/server-starter/src/lixf311/fc-framework-go/resources/component-libraries.yml#L515
+	componentIDOpenFunction = 5013 // https://github.com/apache/skywalking/blob/master/oap-server/server-starter/src/github.com/lixf311/fc-framework-go/resources/component-libraries.yml#L515
 )
 
 var (

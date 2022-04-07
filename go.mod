@@ -1,4 +1,4 @@
-module lixf311/fc-framework-go
+module github.com/lixf311/fc-framework-go
 
 go 1.16
 

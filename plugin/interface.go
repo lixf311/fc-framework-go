@@ -1,7 +1,7 @@
 package plugin
 
 import (
-	ofctx "lixf311/fc-framework-go/context"
+	ofctx "github.com/lixf311/fc-framework-go/context"
 )
 
 type Metadata interface {

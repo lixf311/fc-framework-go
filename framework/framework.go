@@ -3,15 +3,16 @@ package framework
 import (
 	"context"
 	"errors"
+	"k8s.io/klog/v2"
 	"net/http"
 
 	cloudevents "github.com/cloudevents/sdk-go/v2"
-	ofctx "lixf311/fc-framework-go/context"
-	"lixf311/fc-framework-go/plugin"
-	"lixf311/fc-framework-go/plugin/skywalking"
-	"lixf311/fc-framework-go/runtime"
-	"lixf311/fc-framework-go/runtime/async"
-	"lixf311/fc-framework-go/runtime/knative"
+	ofctx "github.com/lixf311/fc-framework-go/context"
+	"github.com/lixf311/fc-framework-go/plugin"
+	"github.com/lixf311/fc-framework-go/plugin/skywalking"
+	"github.com/lixf311/fc-framework-go/runtime"
+	"github.com/lixf311/fc-framework-go/runtime/async"
+	"github.com/lixf311/fc-framework-go/runtime/knative"
 )
 
 type functionsFrameworkImpl struct {

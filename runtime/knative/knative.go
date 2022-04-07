@@ -3,15 +3,16 @@ package knative
 import (
 	"context"
 	"fmt"
+	"k8s.io/klog/v2"
 	"net/http"
 	"os"
 	"runtime/debug"
 	"strings"
 
 	cloudevents "github.com/cloudevents/sdk-go/v2"
-	ofctx "lixf311/fc-framework-go/context"
-	"lixf311/fc-framework-go/plugin"
-	"lixf311/fc-framework-go/runtime"
+	ofctx "github.com/lixf311/fc-framework-go/context"
+	"github.com/lixf311/fc-framework-go/plugin"
+	"github.com/lixf311/fc-framework-go/runtime"
 )
 
 const (

@@ -3,11 +3,12 @@ package runtime
 import (
 	"context"
 	"io/ioutil"
+	"k8s.io/klog/v2"
 	"net/http"
 
 	cloudevents "github.com/cloudevents/sdk-go/v2"
-	ofctx "lixf311/fc-framework-go/context"
-	"lixf311/fc-framework-go/plugin"
+	ofctx "github.com/lixf311/fc-framework-go/context"
+	"github.com/lixf311/fc-framework-go/plugin"
 )
 
 type Interface interface {

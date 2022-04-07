@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"k8s.io/klog/v2"
 	"net/http"
 	"os"
 	"strings"
@@ -11,9 +12,9 @@ import (
 	cloudevents "github.com/cloudevents/sdk-go/v2"
 	dapr "github.com/dapr/go-sdk/service/common"
 	daprd "github.com/dapr/go-sdk/service/grpc"
-	ofctx "lixf311/fc-framework-go/context"
-	"lixf311/fc-framework-go/plugin"
-	"lixf311/fc-framework-go/runtime"
+	ofctx "github.com/lixf311/fc-framework-go/context"
+	"github.com/lixf311/fc-framework-go/plugin"
+	"github.com/lixf311/fc-framework-go/runtime"
 )
 
 type Runtime struct {
